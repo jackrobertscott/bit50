@@ -17,6 +17,7 @@ export const StringInput: FC<{
           css: {
             background: 'blue',
           },
+          children: ['asdf'],
         },
         'Hello'
       ),
