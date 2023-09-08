@@ -1,0 +1,31 @@
+{
+  "name": "input50",
+  "description": "A collection of React input components.",
+  "author": "Jack Scott",
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "dev": "vite",
+    "prepublishOnly": "npm run build"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@types/jest": "^29.5.4",
+    "@types/node": "^20.5.9",
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.2.7",
+    "@vitejs/plugin-react": "^4.0.4",
+    "jest": "^29.6.4",
+    "typescript": "^5.2.2",
+    "vite": "^4.4.9"
+  },
+  "peerDependencies": {
+    "@emotion/css": "^11.11.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
