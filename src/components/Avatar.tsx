@@ -1,11 +1,12 @@
 import { FC } from 'react'
-import { $ } from './createElement'
+import { $ } from '../createElement'
+import { useTheme } from '../useTheme'
 
-export type ComponentProps = {
+export type AvatarProps = {
   // props
 }
 
-export const Component: FC<ComponentProps> = ({}) => {
+export const Avatar: FC<AvatarProps> = ({}) => {
   const theme = useTheme()
   return $('div', {
     css: {

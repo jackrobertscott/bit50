@@ -1,11 +1,12 @@
 import { FC } from 'react'
-import { $ } from './createElement'
+import { $ } from '../createElement'
+import { useTheme } from '../useTheme'
 
-export type ComponentProps = {
+export type FileInputProps = {
   // props
 }
 
-export const Component: FC<ComponentProps> = ({}) => {
+export const FileInput: FC<FileInputProps> = ({}) => {
   const theme = useTheme()
   return $('div', {
     css: {

@@ -1,11 +1,12 @@
 import { FC } from 'react'
-import { $ } from './createElement'
+import { $ } from '../createElement'
+import { useTheme } from '../useTheme'
 
-export type ComponentProps = {
+export type BreadcrumbProps = {
   // props
 }
 
-export const Component: FC<ComponentProps> = ({}) => {
+export const Breadcrumb: FC<BreadcrumbProps> = ({}) => {
   const theme = useTheme()
   return $('div', {
     css: {

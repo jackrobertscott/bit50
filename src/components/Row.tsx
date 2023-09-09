@@ -1,11 +1,12 @@
 import { FC } from 'react'
-import { $ } from './createElement'
+import { $ } from '../createElement'
+import { useTheme } from '../useTheme'
 
-export type ComponentProps = {
+export type RowProps = {
   // props
 }
 
-export const Component: FC<ComponentProps> = ({}) => {
+export const Row: FC<RowProps> = ({}) => {
   const theme = useTheme()
   return $('div', {
     css: {

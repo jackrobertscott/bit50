@@ -1,7 +1,6 @@
 import { createElement } from 'react'
 import { createRoot } from 'react-dom/client'
-import { App } from './App'
 
-const root = createElement(App, {})
+const root = createElement('div', { style: { color: 'green' } }, 'hello world')
 
 createRoot(document.getElementById('root')!).render(root)
