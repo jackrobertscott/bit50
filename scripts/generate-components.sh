@@ -21,7 +21,7 @@ do
   # Create a TypeScript file with the component's name
   cat <<EOL >${component}.tsx
 import { FC } from 'react'
-import { $ } from '../createElement'
+import { createElement as $ } from '../createElement'
 import { useTheme } from '../useTheme'
 
 export type ${component}Props = {

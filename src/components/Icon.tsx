@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import { $ } from '../createElement'
+import { createElement as $ } from '../createElement'
 import { useTheme } from '../useTheme'
 
 export type IconProps = {

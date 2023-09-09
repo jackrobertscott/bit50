@@ -20,7 +20,9 @@ type ElementProps<T> = T extends keyof HTMLElementTagNameMap
 
 type CssProps<T> = T & { css?: CSSInterpolation }
 
-export function $<T extends string | FC<any> | ComponentClass<any, any>>(
+export function createElement<
+  T extends string | FC<any> | ComponentClass<any, any>
+>(
   type: T,
   props?: CssProps<ElementProps<T>> | null,
   ...children: ReactNode[]

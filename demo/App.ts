@@ -1,5 +1,5 @@
-import { FC, createElement } from 'react'
-import { StringInput } from '../src/index'
+import { FC } from 'react'
+import { Page } from '../src/components/Page'
+import { createElement as $ } from '../src/createElement'
 
-export const App: FC<{}> = () =>
-  createElement('div', {}, 'hello world', createElement(StringInput, {}))
+export const App: FC<{}> = () => $(Page, {})
