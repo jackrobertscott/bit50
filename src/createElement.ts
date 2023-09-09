@@ -31,6 +31,7 @@ export function createElement<
     const className = [css(props.css), props.className]
       .filter(Boolean)
       .join(' ')
+    props.css = undefined
     props = { ...props, className }
   }
   children = [

@@ -10,10 +10,13 @@ export const Page: FC<PageProps> = ({}) => {
   const theme = useTheme()
   return $('div', {
     css: {
-      // css
+      width: '100%',
+      height: '100%',
+      margin: '0 auto',
+      maxWidth: theme.page.maxWidth,
+      borderLeft: theme.page.border.toString(),
+      borderRight: theme.page.border.toString(),
     },
-    children: [
-      // children
-    ],
+    children: ['Hello world'],
   })
 }

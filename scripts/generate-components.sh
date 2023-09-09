@@ -19,7 +19,7 @@ all_components=("${layout_and_structure[@]}" "${text_and_media[@]}" "${input_con
 for component in "${all_components[@]}"
 do
   # Create a TypeScript file with the component's name
-  cat <<EOL >${component}.tsx
+  cat <<EOL >${component}.ts
 import { FC } from 'react'
 import { createElement as $ } from '../createElement'
 import { useTheme } from '../useTheme'
@@ -41,7 +41,7 @@ export const ${component}: FC<${component}Props> = ({}) => {
 }
 EOL
 
-  echo "Generated ${component}.tsx"
+  echo "Generated ${component}.ts"
 done
 
 echo "All components generated."
