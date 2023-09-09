@@ -1,19 +1,26 @@
-import { FC } from 'react'
+import { CSSInterpolation } from '@emotion/css'
+import { FC, ReactNode } from 'react'
 import { createElement as $ } from '../createElement'
 import { useTheme } from '../useTheme'
 
 export type HeadingProps = {
-  // props
+  level?: 1 | 2 | 3 | 4 | 5 | 6
+  children: ReactNode
+  css?: CSSInterpolation
 }
 
-export const Heading: FC<HeadingProps> = ({}) => {
+export const Heading: FC<HeadingProps> = ({ level = 1, children, css }) => {
   const theme = useTheme()
-  return $('div', {
-    css: {
-      // css
-    },
-    children: [
-      // children
+  return $(`h${level}` as const, {
+    children,
+    css: [
+      {
+        margin: '0',
+        padding: '0',
+        fontFamily: theme.heading.family,
+        color: theme.heading.color.toString(),
+      },
+      css,
     ],
   })
 }

@@ -1,12 +1,12 @@
-import { FC } from 'react'
+import { FC, ReactElement } from 'react'
 import { createElement as $ } from '../createElement'
 import { useTheme } from '../useTheme'
 
 export type PageProps = {
-  // props
+  children: ReactElement | ReactElement[]
 }
 
-export const Page: FC<PageProps> = ({}) => {
+export const Page: FC<PageProps> = ({ children }) => {
   const theme = useTheme()
   return $('div', {
     css: {
@@ -17,6 +17,6 @@ export const Page: FC<PageProps> = ({}) => {
       borderLeft: theme.page.border.toString(),
       borderRight: theme.page.border.toString(),
     },
-    children: ['Hello world'],
+    children,
   })
 }
