@@ -3,7 +3,7 @@ import { FC } from 'react'
 import { Icon } from '../src/components/Icon'
 import { Page } from '../src/components/Page'
 import { Root } from '../src/components/Root'
-import { createElement as $ } from '../src/createElement'
+import { createElement as $ } from '../src/utils/createElement'
 
 export const App: FC<{}> = () =>
   $(Root, {

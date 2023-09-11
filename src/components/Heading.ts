@@ -1,7 +1,7 @@
 import { CSSInterpolation } from '@emotion/css'
 import { FC, ReactNode } from 'react'
-import { createElement as $ } from '../createElement'
-import { useTheme } from '../useTheme'
+import { createElement as $ } from '../utils/createElement'
+import { useTheme } from '../utils/useTheme'
 
 export type HeadingProps = {
   level?: 1 | 2 | 3 | 4 | 5 | 6

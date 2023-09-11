@@ -1,7 +1,7 @@
 import { injectGlobal } from '@emotion/css'
 import { FC, ReactElement, useEffect } from 'react'
-import { createElement as $ } from '../createElement'
-import { useTheme } from '../useTheme'
+import { createElement as $ } from '../utils/createElement'
+import { useTheme } from '../utils/useTheme'
 
 export type RootProps = {
   children: ReactElement | ReactElement[]
